@@ -20,20 +20,25 @@ const headerStyle = css`
 
 const Header = () => (
   <header className={tw(headerStyle)}>
-    <div className={tw('flex max-w-4xl mx-auto py-16 px-14 sm:px-6 lg:px-8')}>
-      <div className="flex items-center justify-center md:w-1/4">
+    <div className={tw('flex flex-col lg:flex-row max-w-4xl mx-auto items-center py-16 px-14 sm:px-6 lg:px-8')}>
+      <div className="md:w-1/4 xs:w-full items-center">
         <img
           className="w-40 h-40 p-1 rounded-full ring-2 ring-ingigo-600"
           src="https://firebasestorage.googleapis.com/v0/b/commentup-prod.appspot.com/o/images%2Fa.png?alt=media&token=f0f0372b-2cb4-4c90-b5fc-77e285696740"
           alt="Bordered avatar"
         />
       </div>
-      <div className="md:w-3/4">
-        <h1 className={tw('font-sans font-bold text-exl md:text-4xl lg:text-5xl text-left leading-snug text-gray-800')}>
+      <div className="md:w-3/4 xs:w-full justify-center items-center">
+        <h1
+          className={tw(
+            // eslint-disable-next-line max-len
+            'font-sans font-bold text-exl md:text-4xl lg:text-5xl sm:mt-5 md:text-left text-center leading-snug text-gray-800',
+          )}
+        >
           Andrés Felipe Ceballos
         </h1>
-        <div className={tw('max-w-xl')}>
-          <p className={tw('mt-5 text-gray-500 text-left text-xl lg:text-3xl')}>
+        <div className={tw('max-w-xl items-center text-center')}>
+          <p className={tw('mt-5 text-gray-500 md:text-left text-xl lg:text-3xl')}>
             {/* Save time classifying the comments of your posts. */}
             Sr Software Developer
           </p>
