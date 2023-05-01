@@ -4,6 +4,6 @@ export const localStorageStyleKey = 'style';
 
 export const containerMaxW = 'xl:max-w-6xl xl:mx-auto';
 
-export const appTitle = 'CommentUp';
+export const appTitle = 'andresceballosm';
 
 export const getPageTitle = (currentPageTitle: string) => `${currentPageTitle} — ${appTitle}`;

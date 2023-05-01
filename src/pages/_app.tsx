@@ -1,5 +1,4 @@
 import React from 'react';
-import Script from 'next/script';
 import type { AppProps } from 'next/app';
 import type { ReactElement, ReactNode } from 'react';
 import type { NextPage } from 'next';
@@ -22,13 +21,12 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout || ((page) => page);
 
-  const title = 'CommentUp';
+  const title = 'andresceballos';
 
-  const description = 'CommentUp - Web Application';
+  const description = 'andresceballosm - Web Application';
 
-  const url = 'https://justboil.github.io/data-source/';
-
-  const image = 'https://static.justboil.me/templates/one/repo-tailwind-react.png';
+  const image =
+    'https://firebasestorage.googleapis.com/v0/b/commentup-prod.appspot.com/o/images%2Fa.png?alt=media&token=f0f0372b-2cb4-4c90-b5fc-77e285696740';
 
   const imageWidth = '1920';
 
@@ -43,8 +41,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
               <Head>
                 <meta name="description" content={description} />
 
-                <meta property="og:url" content={url} />
-                <meta property="og:site_name" content="JustBoil.me" />
+                <meta property="og:site_name" content="andresceballosm" />
                 <meta property="og:title" content={title} />
                 <meta property="og:description" content={description} />
                 <meta property="og:image" content={image} />
@@ -61,17 +58,6 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
                 <link rel="icon" href="/logo.svg" />
               </Head>
-
-              <Script src="https://www.googletagmanager.com/gtag/js?id=G-FP2DJ333TP" strategy="afterInteractive" />
-
-              <Script id="google-analytics" strategy="afterInteractive">
-                {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-FP2DJ333TP');
-            `}
-              </Script>
               {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
               {/* @ts-ignore */}
               <Component {...pageProps} />

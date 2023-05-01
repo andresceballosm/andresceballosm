@@ -1,17 +1,12 @@
 {
-  "name": "commentup-landing",
-  "description": "CommentUp landing page in TypeScript/Next.js!",
+  "name": "andresceballosm",
+  "description": "Andres Felipe Ceballos landing page in TypeScript/Next.js!",
   "version": "1.0.0",
   "private": true,
   "author": "Andres Felipe Ceballos",
   "license": "MIT",
   "keywords": [
-    "commentup",
-    "social media",
-    "instagram",
-    "tiktok",
-    "youtube",
-    "facebook"
+    "andresceballos"
   ],
   "scripts": {
     "dev": "next",

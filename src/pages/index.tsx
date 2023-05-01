@@ -13,10 +13,7 @@ import TechnologiesSection from '@/components/technologies';
 export default function Home() {
   return (
     <Page>
-      <NextSeo
-        title="CommentUp"
-        description="A TypeScript/Next.js theme that includes everything you need to build amazing landing page!"
-      />
+      <NextSeo title="andresceballosm" description="A TypeScript/Next.js" />
       <Header />
       <meta name="apple-itunes-app" content="app-id=1665658655, affiliate-data=myAffiliateData, app-argument=myURL" />
       <main>
