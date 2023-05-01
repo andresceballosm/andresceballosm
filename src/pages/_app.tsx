@@ -17,8 +17,6 @@ type AppPropsWithLayout = AppProps & {
 
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   // Use the layout defined at the page level, if available
-  const getLayout = Component.getLayout || ((page) => page);
-
   const title = 'andresceballos';
 
   const description = 'andresceballosm - Web Application';
@@ -32,33 +30,32 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <Provider store={store}>
-      {getLayout(
-        <>
-          <Head>
-            <meta name="description" content={description} />
+      <>
+        <Head>
+          <meta name="description" content={description} />
 
-            <meta property="og:site_name" content="andresceballosm" />
-            <meta property="og:title" content={title} />
-            <meta property="og:description" content={description} />
-            <meta property="og:image" content={image} />
-            <meta property="og:image:type" content="image/png" />
-            <meta property="og:image:width" content={imageWidth} />
-            <meta property="og:image:height" content={imageHeight} />
+          <meta property="og:site_name" content="andresceballosm" />
+          <meta property="og:title" content={title} />
+          <meta property="og:description" content={description} />
+          <meta property="og:image" content={image} />
+          <meta property="og:image:type" content="image/png" />
+          <meta property="og:image:width" content={imageWidth} />
+          <meta property="og:image:height" content={imageHeight} />
 
-            <meta property="twitter:card" content="summary_large_image" />
-            <meta property="twitter:title" content={title} />
-            <meta property="twitter:description" content={description} />
-            <meta property="twitter:image:src" content={image} />
-            <meta property="twitter:image:width" content={imageWidth} />
-            <meta property="twitter:image:height" content={imageHeight} />
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:title" content={title} />
+          <meta property="twitter:description" content={description} />
+          <meta property="twitter:image:src" content={image} />
+          <meta property="twitter:image:width" content={imageWidth} />
+          <meta property="twitter:image:height" content={imageHeight} />
 
-            <link rel="icon" href="/logo.svg" />
-          </Head>
-          {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-          {/* @ts-ignore */}
-          <Component {...pageProps} />
-        </>,
-      )}
+          <link rel="icon" href="/logo.svg" />
+        </Head>
+        {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+        {/* @ts-ignore */}
+        <Component {...pageProps} />
+      </>
+      ,
     </Provider>
   );
 }
