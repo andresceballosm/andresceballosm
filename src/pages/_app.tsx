@@ -6,8 +6,6 @@ import Head from 'next/head';
 import { Provider } from 'react-redux';
 import { store } from '../stores/store';
 import '../css/main.css';
-import { AuthProvider } from '../context/authContext';
-import InstagramProvider from '../context/instagramContext';
 
 export type NextPageWithLayout<P = Record<string, unknown>, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement) => ReactNode;
@@ -34,37 +32,33 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
 
   return (
     <Provider store={store}>
-      <AuthProvider>
-        <InstagramProvider>
-          {getLayout(
-            <>
-              <Head>
-                <meta name="description" content={description} />
+      {getLayout(
+        <>
+          <Head>
+            <meta name="description" content={description} />
 
-                <meta property="og:site_name" content="andresceballosm" />
-                <meta property="og:title" content={title} />
-                <meta property="og:description" content={description} />
-                <meta property="og:image" content={image} />
-                <meta property="og:image:type" content="image/png" />
-                <meta property="og:image:width" content={imageWidth} />
-                <meta property="og:image:height" content={imageHeight} />
+            <meta property="og:site_name" content="andresceballosm" />
+            <meta property="og:title" content={title} />
+            <meta property="og:description" content={description} />
+            <meta property="og:image" content={image} />
+            <meta property="og:image:type" content="image/png" />
+            <meta property="og:image:width" content={imageWidth} />
+            <meta property="og:image:height" content={imageHeight} />
 
-                <meta property="twitter:card" content="summary_large_image" />
-                <meta property="twitter:title" content={title} />
-                <meta property="twitter:description" content={description} />
-                <meta property="twitter:image:src" content={image} />
-                <meta property="twitter:image:width" content={imageWidth} />
-                <meta property="twitter:image:height" content={imageHeight} />
+            <meta property="twitter:card" content="summary_large_image" />
+            <meta property="twitter:title" content={title} />
+            <meta property="twitter:description" content={description} />
+            <meta property="twitter:image:src" content={image} />
+            <meta property="twitter:image:width" content={imageWidth} />
+            <meta property="twitter:image:height" content={imageHeight} />
 
-                <link rel="icon" href="/logo.svg" />
-              </Head>
-              {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
-              {/* @ts-ignore */}
-              <Component {...pageProps} />
-            </>,
-          )}
-        </InstagramProvider>
-      </AuthProvider>
+            <link rel="icon" href="/logo.svg" />
+          </Head>
+          {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
+          {/* @ts-ignore */}
+          <Component {...pageProps} />
+        </>,
+      )}
     </Provider>
   );
 }
