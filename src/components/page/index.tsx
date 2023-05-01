@@ -9,7 +9,7 @@ interface IProps {
 const Page = ({ children }: IProps) => (
   <div>
     <Head>
-      <link rel="icon" href="/logo.svg" />
+      <link rel="icon" href="/logo.png" />
       <meta name="facebook-domain-verification" content="ayke8o0nxgdhg9f4ohvzd58g5ii37y" />
     </Head>
     <div className={tw('min-h-screen flex flex-col')}>

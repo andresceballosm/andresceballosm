@@ -36,7 +36,7 @@ export const PROJECTS = [
     description: 'AI Platform',
     platform: 'Mobile/Web',
     sector: 'AI',
-    icon: '/logo.svg',
+    icon: '/logo.png',
     url: 'https://apps.apple.com/pa/app/id1665658655',
   },
   {

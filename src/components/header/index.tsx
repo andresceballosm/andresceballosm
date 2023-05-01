@@ -49,7 +49,9 @@ const Header = () => (
           </div>
           <div className="ml-2">
             <Button>
-              <Link href="https://calendly.com/ceballosmarandres/30min">CV</Link>
+              <Link href="https://drive.google.com/file/d/1pToThjllf7suJZ1qkne0_kGInvON47EX/view?usp=share_link">
+                CV
+              </Link>
             </Button>
           </div>
         </div>

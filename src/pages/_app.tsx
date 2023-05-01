@@ -49,7 +49,7 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
           <meta property="twitter:image:width" content={imageWidth} />
           <meta property="twitter:image:height" content={imageHeight} />
 
-          <link rel="icon" href="/logo.svg" />
+          <link rel="icon" href="/logo.png" />
         </Head>
         {/* eslint-disable-next-line @typescript-eslint/ban-ts-comment */}
         {/* @ts-ignore */}
