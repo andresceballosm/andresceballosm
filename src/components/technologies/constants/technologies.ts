@@ -50,6 +50,16 @@ export const TECHNOLOGIES = [
     icon: '',
   },
   {
+    name: 'GraphQL',
+    rating: '4.3',
+    icon: '',
+  },
+  {
+    name: 'StoryBook',
+    rating: '4.8',
+    icon: '',
+  },
+  {
     name: 'MongoDB',
     rating: '4.6',
     icon: '',
@@ -86,11 +96,6 @@ export const TECHNOLOGIES = [
   },
   {
     name: 'CouchDB',
-    rating: '4.0',
-    icon: '',
-  },
-  {
-    name: 'GraphQL',
     rating: '4.0',
     icon: '',
   },
