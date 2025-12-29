@@ -1,5 +1,30 @@
 export const PROJECTS = [
   {
+    name: 'Pipo Code',
+    description: 'I built a AI coding Agent for mobile applications',
+    platform: 'Mobile/Web',
+    sector: 'Finance',
+    icon: '/images/pipo.png',
+    url: 'https://www.pipocode.com',
+  },
+  {
+    name: 'Dow Jones',
+    description:
+      'Helping to create different "personalization" and notification services for different Dow Jones media platforms',
+    platform: 'Mobile/Web',
+    sector: 'Finance',
+    icon: '/images/dowjones.jpeg',
+    url: 'https://www.wsj.com/',
+  },
+  {
+    name: 'LaTribune',
+    description: 'I was working to help create a migration for 5 applications for a company of media company in Canada',
+    platform: 'Mobile',
+    sector: 'Media',
+    icon: '/images/latribune.png',
+    url: 'https://apps.apple.com/do/app/la-tribune/id1046600289',
+  },
+  {
     name: 'Davivienda',
     description: 'Bank Application for Colombia and Central America',
     platform: 'Mobile',

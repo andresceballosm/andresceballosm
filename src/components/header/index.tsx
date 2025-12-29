@@ -54,7 +54,7 @@ const Header = () => (
           </div>
           <div className="ml-2">
             <Button>
-              <Link href="https://drive.google.com/file/d/1pToThjllf7suJZ1qkne0_kGInvON47EX/view?usp=share_link">
+              <Link href="https://docs.google.com/document/d/1p54jo5p4_wNKnNtn9GI7orQnpNLJ2_me_mnFMPznOOQ/edit?usp=sharing">
                 CV
               </Link>
             </Button>
